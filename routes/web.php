@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/update', function () {
     return view('ScoreUpdate');
 });
+
+Route::post('/pushScoreValue','ScoreUpdateController@pushScoreValue');
+
+
